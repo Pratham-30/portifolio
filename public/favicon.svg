@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0f1015"/>
+      <stop offset="100%" stop-color="#1a1a23"/>
+    </linearGradient>
+    <linearGradient id="text" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ff4655"/>
+      <stop offset="100%" stop-color="#ff8a8a"/>
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="8" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  <rect width="512" height="512" rx="8" fill="url(#bg)"/>
+  <rect x="4" y="4" width="504" height="504" rx="6" fill="none" stroke="#ff4655" stroke-width="3" opacity="0.3"/>
+  <!-- Crosshair accent top-right -->
+  <line x1="390" y1="80" x2="430" y2="80" stroke="#ff4655" stroke-width="2" opacity="0.4"/>
+  <line x1="410" y1="60" x2="410" y2="100" stroke="#ff4655" stroke-width="2" opacity="0.4"/>
+  <text x="256" y="310" text-anchor="middle" font-family="'Bebas Neue', 'Impact', system-ui, sans-serif" font-weight="400" font-size="260" fill="url(#text)" filter="url(#glow)">PN</text>
+</svg>
